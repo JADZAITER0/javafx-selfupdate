@@ -1,9 +1,9 @@
 {
-  "version" : "1761420706678",
+  "version" : "1761421787022",
   "files" : {
-    "com/dynamic/mainapp/Launcher.class" : "62728793710fd9bdbee2321b6f32b710f0bd2305149e621e1fdb9c77518ce5ae",
+    "com/dynamic/mainapp/Launcher.class" : "f7084085703f58a82dc5f8e56915e3e7eb914cd265019c8db2496bb0f8687d38",
+    "com/dynamic/mainapp/Main.class" : "032413e52b023b44125d2662b41f8e4007a6a91b63855f671378c27876a1864b",
     "com/dynamic/mainapp/hello-view.fxml" : "f5d92b6f4efe055c32ee2ba8464cf52477e58037e57358948f4f9c0b65050e6e",
-    "com/example/Main.class" : "b4fe5400f0650c33787e153c68d8666eefe48de31826ee12c04fd586a090aca2",
     "module-info.class" : "a07aa7173fec03c565c7431ce8aa9d3b8b0547e03a3cc56af466d3de0087db0d"
   }
 }

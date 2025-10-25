@@ -1,4 +1,4 @@
-package com.example;
+package com.dynamic.mainapp;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

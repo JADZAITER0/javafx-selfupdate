@@ -1,6 +1,5 @@
 package com.dynamic.mainapp;
 
-import com.example.Main;
 import javafx.application.Application;
 
 public class Launcher {

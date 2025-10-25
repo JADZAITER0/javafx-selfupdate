@@ -18,7 +18,8 @@ import java.util.*;
 
 public class LauncherApp extends Application {
     // CHANGE to your repo raw URL where manifest.json lives
-    private static final String REMOTE_BASE = "https://raw.githubusercontent.com/JADZAITER0/javafx-selfupdate/tree/main/deploy/";
+    private static final String REMOTE_BASE = "https://raw.githubusercontent.com/JADZAITER0/javafx-selfupdate/main/deploy/";
+
 
     private static final String MANIFEST_URL = REMOTE_BASE + "manifest.json";
 
@@ -115,7 +116,7 @@ public class LauncherApp extends Application {
         // Classpath = all files in cacheDir (classes root)
         // Build classpath string: cacheDir (which has package dirs) - pass as classpath root
         String javaExec = Paths.get(System.getProperty("java.home"), "bin", "java").toString();
-        String mainClass = "com.example.Main";
+        String mainClass = "com.dynamic.Main";
         ProcessBuilder pb = new ProcessBuilder(javaExec, "-cp", cacheDir.toString(), mainClass);
         pb.inheritIO(); // optional: shows child stdout/stderr in launcher console
         Process p = pb.start();
