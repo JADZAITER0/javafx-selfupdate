@@ -1,0 +1,9 @@
+{
+  "version" : "1761420706678",
+  "files" : {
+    "com/dynamic/mainapp/Launcher.class" : "62728793710fd9bdbee2321b6f32b710f0bd2305149e621e1fdb9c77518ce5ae",
+    "com/dynamic/mainapp/hello-view.fxml" : "f5d92b6f4efe055c32ee2ba8464cf52477e58037e57358948f4f9c0b65050e6e",
+    "com/example/Main.class" : "b4fe5400f0650c33787e153c68d8666eefe48de31826ee12c04fd586a090aca2",
+    "module-info.class" : "a07aa7173fec03c565c7431ce8aa9d3b8b0547e03a3cc56af466d3de0087db0d"
+  }
+}

@@ -18,7 +18,8 @@ import java.util.*;
 
 public class LauncherApp extends Application {
     // CHANGE to your repo raw URL where manifest.json lives
-    private static final String REMOTE_BASE = "https://raw.githubusercontent.com/<user>/javafx-selfupdate/gh-pages/";
+    private static final String REMOTE_BASE = "https://raw.githubusercontent.com/JADZAITER0/javafx-selfupdate/tree/main/deploy/";
+
     private static final String MANIFEST_URL = REMOTE_BASE + "manifest.json";
 
     private final Path cacheDir = Paths.get(System.getProperty("user.home"), ".mylauncher", "app_cache");
