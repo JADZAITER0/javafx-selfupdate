@@ -1,9 +1,11 @@
 {
-  "version" : "1761476168351",
+  "version" : "1761477458925",
   "files" : {
+    "com/dynamic/mainapp/Controllers/MainController.class" : "8ece342561a6376f0cd83cadd1ff4bb0d92aab98b0fae049230471a93e74451e",
     "com/dynamic/mainapp/Launcher.class" : "f7084085703f58a82dc5f8e56915e3e7eb914cd265019c8db2496bb0f8687d38",
-    "com/dynamic/mainapp/Main.class" : "28c08b4fa470f1445b8ebbfb144be271c98f6dc57caf13978759073ff2ed3f69",
-    "com/dynamic/mainapp/hello-view.fxml" : "f5d92b6f4efe055c32ee2ba8464cf52477e58037e57358948f4f9c0b65050e6e",
-    "module-info.class" : "a07aa7173fec03c565c7431ce8aa9d3b8b0547e03a3cc56af466d3de0087db0d"
+    "com/dynamic/mainapp/Main.class" : "4f0ce953c324a358eca6c8ba9e030aa83cbba5631b43e8a94a12d206e1a99d1c",
+    "com/dynamic/mainapp/Stylesheets/Main.css" : "e35d75ee909c784b3596cabf55b4819db20d9a76dea5153a605f9b8cac0ff4d5",
+    "com/dynamic/mainapp/Views/main-view.fxml" : "c8367a63db61b9fac3516c5b4edeed08048bc49b2cba8825f89b1b681133c246",
+    "module-info.class" : "28cbdcaa6fda09c7820fdef6322a959befe28c66ef39bb59bbf978d99b964638"
   }
 }
