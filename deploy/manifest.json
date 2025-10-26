@@ -1,8 +1,8 @@
 {
-  "version" : "1761473133249",
+  "version" : "1761475836928",
   "files" : {
     "com/dynamic/mainapp/Launcher.class" : "f7084085703f58a82dc5f8e56915e3e7eb914cd265019c8db2496bb0f8687d38",
-    "com/dynamic/mainapp/Main.class" : "36f525501c2f7e1e77e1ca7af07c44d7d2d4273b4a91272c1ff41d9637826046",
+    "com/dynamic/mainapp/Main.class" : "839f5de703e0cd69c5705712f0af44aa03f6e57a4f7102fd7347f5183f4c2825",
     "com/dynamic/mainapp/hello-view.fxml" : "f5d92b6f4efe055c32ee2ba8464cf52477e58037e57358948f4f9c0b65050e6e",
     "module-info.class" : "a07aa7173fec03c565c7431ce8aa9d3b8b0547e03a3cc56af466d3de0087db0d"
   }
