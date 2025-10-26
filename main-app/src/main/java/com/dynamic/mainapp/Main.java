@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) {
-        Label label = new Label("Hello from not dynamically loaded Main App!");
+        Label label = new Label("Hello from not not dynamically loaded Main App!");
         Button btn = new Button("Say hi");
         btn.setOnAction(e -> label.setText("Hi! Updated at: " + System.currentTimeMillis()));
 
