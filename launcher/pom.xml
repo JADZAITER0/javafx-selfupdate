@@ -14,6 +14,11 @@
 <junit.version>5.12.1</junit.version>  </properties>
 
   <dependencies>
+      <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-base</artifactId>
+          <version>21.0.6</version>
+      </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
@@ -47,6 +52,34 @@
 
   <build>
     <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.4.1</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                    <configuration>
+                        <transformers>
+                            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <mainClass>com.example.selfupdate.launcher.LauncherApp</mainClass>
+                            </transformer>
+                        </transformers>
+                        <filters>
+                            <filter>
+                                <artifact>*:*</artifact>
+                                <excludes>
+                                    <exclude>module-info.class</exclude>
+                                </excludes>
+                            </filter>
+                        </filters>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -65,7 +98,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.example.selfupdate.launcher/com.example.selfupdate.launcher.Launcher</mainClass>
+              <mainClass>com.example.selfupdate.launcher.LauncherApp</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
@@ -74,6 +107,7 @@
               <noHeaderFiles>true</noHeaderFiles>
             </configuration>
           </execution>
+
         </executions>
       </plugin>
     </plugins>
