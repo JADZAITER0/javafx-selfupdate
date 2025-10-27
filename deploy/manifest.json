@@ -1,10 +1,10 @@
 {
-  "version" : "1761552883758",
+  "version" : "1761553039726",
   "files" : {
     "com/dynamic/mainapp/Controllers/MainController.class" : "8ece342561a6376f0cd83cadd1ff4bb0d92aab98b0fae049230471a93e74451e",
     "com/dynamic/mainapp/Launcher.class" : "f7084085703f58a82dc5f8e56915e3e7eb914cd265019c8db2496bb0f8687d38",
     "com/dynamic/mainapp/Main.class" : "4f0ce953c324a358eca6c8ba9e030aa83cbba5631b43e8a94a12d206e1a99d1c",
-    "com/dynamic/mainapp/Stylesheets/Main.css" : "de6530724054a831bb6732c4ee00205ffe914dff77e618d306c9b71d347b3ef4",
+    "com/dynamic/mainapp/Stylesheets/Main.css" : "a7a56c3b42bdf76a5e7487e5f66622c773c92dc8563531543ab4baa0ba8e460a",
     "com/dynamic/mainapp/Views/main-view.fxml" : "c8367a63db61b9fac3516c5b4edeed08048bc49b2cba8825f89b1b681133c246",
     "module-info.class" : "28cbdcaa6fda09c7820fdef6322a959befe28c66ef39bb59bbf978d99b964638"
   }
