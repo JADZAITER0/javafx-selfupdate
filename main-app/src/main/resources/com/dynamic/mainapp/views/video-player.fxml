@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.selfupdate.testjavafxmvci.views.videoPlayer.VideoPlayerController"
+           styleClass="video-player-container"
+           minWidth="0"
+           minHeight="0"
+           fx:id="videoContainer">
+
+    <!-- Video Layer (Bottom) -->
+    <MediaView fx:id="mediaView" preserveRatio="true"/>
+
+    <!-- Overlay for loading/error messages -->
+    <Label fx:id="statusLabel" styleClass="status-label" visible="false" managed="false"/>
+
+    <!-- Control Panel Overlay (Top) -->
+    <VBox fx:id="controlsContainer" styleClass="controls-overlay" spacing="8"
+          StackPane.alignment="BOTTOM_CENTER" pickOnBounds="false" maxHeight="120">
+        <padding>
+            <Insets top="20" right="15" bottom="10" left="15"/>
+        </padding>
+
+        <!-- Progress Bar -->
+        <HBox alignment="CENTER_LEFT" spacing="10" pickOnBounds="true">
+            <Label fx:id="currentTimeLabel" text="00:00" styleClass="time-label"/>
+            <Slider fx:id="timeSlider" HBox.hgrow="ALWAYS" min="0" max="100" value="0"/>
+            <Label fx:id="totalTimeLabel" text="00:00" styleClass="time-label"/>
+        </HBox>
+
+        <!-- Control Buttons -->
+        <HBox alignment="CENTER_LEFT" spacing="15" pickOnBounds="true">
+            <!-- Play/Pause Button -->
+            <StackPane fx:id="playPauseButton" styleClass="control-button"/>
+
+            <!-- Volume Controls -->
+            <HBox alignment="CENTER_LEFT" spacing="8">
+                <StackPane fx:id="muteButton" styleClass="control-button"/>
+                <Slider fx:id="volumeSlider" prefWidth="80" min="0" max="1" value="0.5"/>
+            </HBox>
+
+            <!-- Spacer -->
+            <HBox HBox.hgrow="ALWAYS"/>
+
+            <!-- Fullscreen Button -->
+            <StackPane fx:id="fullscreenButton" styleClass="control-button"/>
+        </HBox>
+    </VBox>
+
+</StackPane>

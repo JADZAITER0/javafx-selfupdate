@@ -1,0 +1,31 @@
+.root{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.rectangle
+{
+    -fx-arc-width: 10px;
+    -fx-arc-height: 10px;
+    -fx-stroke: -color-border-muted;
+    -fx-stroke-width: 1px;
+    transition: all 0.8s ease-in-out;
+}
+
+.rectangle:hovered
+{
+    -fx-arc-width: 10px;
+    -fx-arc-height: 10px;
+    -fx-stroke: -color-accent-subtle;
+    -fx-stroke-width: 1px;
+}
+
+.rectangle:selected,
+.rectangle:selected:hovered
+{
+    -fx-arc-width: 10px;
+    -fx-arc-height: 10px;
+    -fx-stroke: -color-accent-fg;
+    -fx-stroke-width: 1px;
+
+}

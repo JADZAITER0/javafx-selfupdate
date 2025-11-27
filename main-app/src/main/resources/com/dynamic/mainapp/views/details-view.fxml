@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import org.controlsfx.control.GridView?>
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.selfupdate.testjavafxmvci.views.details.DetailsController">
+   <children>
+      <ImageView fx:id="background_poster_view" fitHeight="417.0" fitWidth="510.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox fx:id="root_anime_details_vbox" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      
+                            <!-- Correct padding syntax -->
+          <padding>
+              <Insets bottom="15" left="15" right="15" top="15" />
+          </padding>
+      
+                            <HBox spacing="15">
+              <ImageView fx:id="posterView" fitHeight="220" fitWidth="150" preserveRatio="true" />
+              <VBox spacing="5">
+               <HBox spacing="5.0">
+                  <children>
+                        <Label fx:id="titleLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+                     <Button fx:id="fav_btn" mnemonicParsing="false" />
+                  </children>
+               </HBox>
+                  <Label fx:id="statusLabel" />
+                  <Label fx:id="seasonLabel" />
+                  <Label fx:id="typeLabel" />
+              </VBox>
+          </HBox>
+         <TabPane tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+           <tabs>
+             <Tab closable="false" text="Desctiption">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                        
+                                                    <TextArea fx:id="descriptionArea" editable="false" minHeight="-Infinity" prefHeight="150" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+             <Tab closable="false" text="Episodes">
+               <content>
+                 <AnchorPane>
+                        <children>
+                            <GridView fx:id="episodesGrid" prefHeight="300" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+           </tabs>
+         </TabPane>
+      
+                        </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dynamic.mainapp.views.dashboard.DashboardController">
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0">
+
+            <!-- TOP: search bar + results list -->
+            <top>
+                <VBox fx:id="search_container_vbox" spacing="6" BorderPane.alignment="CENTER">
+                    <!-- Search bar HBox -->
+                    <HBox fx:id="search_hbox" alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="600.0">
+                        <children>
+                            <HBox fx:id="search_input_container" alignment="CENTER_RIGHT" HBox.hgrow="NEVER">
+                                <children>
+                                    <TextField fx:id="search_input_field" style="-fx-background-radius: 10 0 0 10;" />
+                                    <Button fx:id="search_btn" mnemonicParsing="false" style="-fx-background-radius: 0 10 10 0; -fx-border-radius: 0 10 10 0;" />
+                                </children>
+                            </HBox>
+                        </children>
+                        <padding>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                    </HBox>
+
+                    <!-- Search Results ListView -->
+                    <HBox alignment="CENTER_RIGHT">
+                        <children>
+                            <ListView fx:id="search_results_listview" prefHeight="200.0" visible="false" managed="false" style="-fx-focus-traversable: false;" />
+                        </children>
+                        <padding>
+                            <Insets left="5.0" right="5.0" />
+                        </padding>
+                    </HBox>
+                </VBox>
+            </top>
+
+            <!-- CENTER: main scroll area (unchanged) -->
+            <center>
+                <ScrollPane fx:id="main_dashboard_scroll_pane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                </ScrollPane>
+            </center>
+
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </BorderPane>
+    </children>
+</StackPane>
